@@ -5,19 +5,24 @@
 }
 
 #bulbasaur{
-  margin: -17.5% 2% 2% 2%;
+  margin: -17.5% 7% 22% 39.8%;
   /* padding-left: 59%; */
 }
 
 #dialogBox{
   height: 140px;
   width: 340px;
-  background-color:red;
-
-  margin: 20% 0 0 38%;
-  z-index: 1;
+  background-color:white;
+  margin: -22% auto;
+  border-style: double;
+  border-width: 10px;
 }
 
+#trainerText{
+  padding: 7% 15%;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 28px
+}
 body{
   /* background-color: rgb(199,235,223); */
   background-image: linear-gradient(to left, #b6d1c9, #3b5453);
