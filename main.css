@@ -1,0 +1,24 @@
+#professorOak{
+  margin: 10%;
+  padding-left: 36%;
+  z-index: -1;
+}
+
+#bulbasaur{
+  margin: -17.5% 2% 2% 2%;
+  /* padding-left: 59%; */
+}
+
+#dialogBox{
+  height: 140px;
+  width: 340px;
+  background-color:red;
+
+  margin: 20% 0 0 38%;
+  z-index: 1;
+}
+
+body{
+  /* background-color: rgb(199,235,223); */
+  background-image: linear-gradient(to left, #b6d1c9, #3b5453);
+}
