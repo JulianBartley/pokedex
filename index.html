@@ -2,13 +2,25 @@
 <html lang="" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
+    <link rel= "stylesheet" href= "main.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-
     <title>Pokedex</title>
   </head>
+
   <body>
-    <div class="homePage">
+<div class="welcome">
+
+    <div id="pokemonClick">
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/175.png" alt="pokemon-logo" height="300px" width="300px" onclick="professorOakPage()">
+    </div>
+
+    <div id="logo">
+      <img src="https://pbs.twimg.com/media/BUS0RPoCUAAeEfe.png" alt="pokemonLogo" width='230px'>
+    </div>
+
+</div>
+
+<div id="project">
 
     <div id="professorOak">
       <img src="https://vignette.wikia.nocookie.net/pokemon/images/8/84/Professor_Oak_XY.png/revision/latest?cb=20131221014829" alt="Professor-Oak">
@@ -19,15 +31,24 @@
     <div id="dialogBox">
       <div id="trainerText">
         Are you a trainer?
-
       </div>
+      <div class="options">
+      <button type="button" id="yes">Yes</button>
+      <br>
+      <!-- Make this open in a new tab. Using JS -->
+      <button type="button" id="no" onclick="window.location.href ='https://www.wikihow.com/Become-a-Pok%C3%A9mon-Trainer';"> No </button>
 
+      <form class="trainer" action="index.html" method="post">
+
+      </form>
+    </div>
     </div>
 
 
+
   </div>
+  <script type="text/javascript" src="main.js">
 
-
-
+  </script>
   </body>
 </html>
