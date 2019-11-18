@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" href= "main.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel = "icon" href = "https://www.shareicon.net/data/256x256/2015/08/24/90230_pokeball_512x512.png"
@@ -35,15 +35,24 @@
         Are you a trainer?
       </div>
       <div class="options">
-      <button type="button" id="yes">Yes</button>
-      <div id="trainer">
-      <form id="trainerName">
-        <input type="text" placeholder="Enter your name:">
-      </form>
+        <button type="button" id="yes" onclick="enterTrainer()">
+
+          Yes
+        </button>
+        <div class="holder">
+
+      <form id="trainerName" >
+        <input type="text" placeholder="Enter your trainer name:">
+
+      <input type="button" name="go" value="Pika!"
+       onclick="window.location.href='pokedex.html'">
+    </form>
+
     </div>
+
       <br>
       <!-- Make this open in a new tab. Using JS -->
-      <button type="button" id="no" onclick="window.location.href ='https://www.wikihow.com/Become-a-Pok%C3%A9mon-Trainer';"> No </button>
+      <button type="button" id="no" <onclick="window.location.href ='https://www.wikihow.com/Become-a-Pok%C3%A9mon-Trainer';"> No </button>
 
 
     </div>

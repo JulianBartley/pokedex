@@ -32,7 +32,6 @@ h1{
 #ball{
   position: absolute;
   margin-top: -70px;
-  padding-left: 88px;
+  padding-left: 90px;
   z-index: 1;
-
 }
