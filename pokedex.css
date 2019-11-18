@@ -35,3 +35,37 @@ h1{
   padding-left: 90px;
   z-index: 1;
 }
+
+#gameFreak{
+  position: absolute;
+  margin-top: -60px;
+  padding-left:777px;
+  z-index: 1;
+}
+
+#grid{
+  position: absolute;
+  margin: 30px 20px;
+  display: grid;
+  border-color: black;
+  grid-template: 20vh 20vh / repeat(2,25vw);
+  grid-template-areas:
+  " up side"
+  "dex sec "
+}
+
+.up{
+  background-color: red;
+}
+
+.side{
+  background-color: blue;
+}
+
+.dex{
+  background-color: green;
+}
+
+.sec{
+  background-color: purple;
+}
