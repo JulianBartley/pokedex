@@ -78,6 +78,11 @@ body{
  border-width: 5px;
  padding: 20px;
 }
+
+#trainerName{
+  display:none;
+}
+
 #no{
   height: 70px;
   width: 100px;
@@ -98,4 +103,5 @@ body{
   position: absolute;
   left: 370px;
   bottom: -8px;
+  display: block;
 }

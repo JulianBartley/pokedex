@@ -1,9 +1,3 @@
-
-//
-// function professorOakPage() {
-//    var pokedex = document.body;
-//    dundy.classList.toggle(".project");
-// }
 var page = document.getElementById('project');
 var icon = document.getElementById('pokemonClick')
 
@@ -17,24 +11,19 @@ function professorOakPage(){
 }
 
 
+class Pokemon{
+  constructor(name){
+    this.name= name
+    this.hp = 0
+    this.attack = 0
+    this.defense = 0
+    this.abilities = []
+  }
+}
 
-
-
-
-
-
-
-//
-// function myFunction() {
-//    var dundy = document.body;
-//    dundy.classList.toggle("night-time");
-// }
-//
-//
-// <li><button class="button" onclick="myFunction()">DUNDIES</button>
-//
-//
-// .night-time{
-//   background-image: url("https://i.redd.it/rbgnajmyts311.jpg");
-//   color: white;
-// }
+class Trainer{
+  constructor(name){
+    this.name = name
+    this.pokemonList = []
+  }
+}
