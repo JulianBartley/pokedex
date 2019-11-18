@@ -3,13 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Pokedex</title>
+    <link rel = "icon" href = "https://www.shareicon.net/data/256x256/2015/08/24/90230_pokeball_512x512.png"
+        type = "image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="pokedex.css">
   </head>
   <body>
     <div class="heading">
-      <h1>PokéDex</h1>
-
+      <h1 id="Pokedex">PokéDex
+      <img id="ball" src="https://cdn76.picsart.com/209915339005202.gif?c256x256" alt="pokeball" height="50px" width="50px"></h1>
     </div>
+
+    <div id="grid">
+      <div id="grid-left">
+        <form id="new-unit-form" action="">
+          <input type="text" id="unit-name">
+          <input type="number" id="unit-hp">
+          <input value="submit" type="submit">
+        </form>
+      </div>
   </body>
 </html>

@@ -1,8 +1,10 @@
 body{
   margin: 0;
+  background-color: rgb(250,214,31);
 }
 
 .heading{
+  margin:0;
   position: absolute;
   background: lightblue;
   background-repeat: no-repeat;
@@ -10,15 +12,27 @@ body{
   border-width: 5px;
   width: 100vw;
   height: 25vh;
-
+  box-shadow: 10px 10px 5px grey;
+  z-index: 1;
 }
+
 h1{
-  font-family: 'Press Start 2P', cursive;
-  padding-top: 10px;
-  padding-left: 436.5px;
-  font-size: 45px;
   width: 350px;
   margin: 0;
   line-height: 100px;
+}
+#Pokedex{
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 24px;
+  font-size: 80px;
+  padding-left: 360.5px;
+
+}
+
+#ball{
+  position: absolute;
+  margin-top: -70px;
+  padding-left: 88px;
+  z-index: 1;
 
 }
