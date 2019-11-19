@@ -1,20 +1,28 @@
-body{
+/* body{
   margin: 0;
-  background-color: rgb(250,214,31);
+  background-color: ;
 }
 
 .heading{
   margin:0;
-  position: absolute;
-  background: lightblue;
+  position: static;
+  background: rgb(178,17,0);
   background-repeat: no-repeat;
   border-style: solid;
-  border-width: 5px;
   width: 100vw;
-  height: 25vh;
-  box-shadow: 10px 10px 5px grey;
+  height: 20vh;
   z-index: 1;
 }
+
+footer{
+  background: rgb(178,17,0);
+  border-style: solid;
+  border-width: 5px;
+  box-shadow: 11px -10px 10px grey;
+  width: 100vw;
+  height: 20vh;
+}
+
 
 h1{
   width: 350px;
@@ -24,9 +32,9 @@ h1{
 #Pokedex{
   font-family: 'Press Start 2P', cursive;
   padding-top: 24px;
-  font-size: 80px;
+  font-size: 30px;
   padding-left: 360.5px;
-
+  
 }
 
 #ball{
@@ -41,31 +49,90 @@ h1{
   margin-top: -60px;
   padding-left:777px;
   z-index: 1;
-}
-
+} */
+/* 
 #grid{
-  position: absolute;
-  margin: 30px 20px;
   display: grid;
   border-color: black;
-  grid-template: 20vh 20vh / repeat(2,25vw);
+  border-width: 5px;
+  grid-template: 20vh 20vh/ repeat(3,20vw);
   grid-template-areas:
-  " up side"
-  "dex sec "
+  "header . header"
+  ". . ."
+  "footer footer footer";
+  
 }
 
-.up{
-  background-color: red;
+.header{
+  grid-area: header;
+  background: rgb(178,17,0);
+  /* border-width: 5px;
+  box-shadow: 10px 10px 5px grey; 
 }
 
-.side{
-  background-color: blue;
-}
-
-.dex{
+/* .dex{
+grid-area: dex;
   background-color: green;
+} */
+
+/* .footer{
+  grid-area: footer;
+  background-color: purple;
+}  */
+
+body{
+  margin: 0;
+  background: black;
 }
 
-.sec{
-  background-color: purple;
+.heading{
+  position: absolute;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  width: 100vw;
+  height: 20vh;  
+  background: rgb(178,17,0);
+}
+
+.bottom{
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  width: 100vw;
+  height: 20vh;
+  background-color: white;
+  position: absolute;
+  bottom: 0vh;
+}
+
+#Pokedex{
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 61px;
+  font-size: 30px;
+  padding-left: 23.5px;
+}
+
+#circle{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 50%; 
+    margin-left: 44.3%;
+    margin-top: -33px;
+}
+
+#halfCircle{
+  position: absolute;
+  margin-left: 46.3%;
+  height:50px;
+  width:100px;
+  border-radius: 0 0 90px 90px;
+  background: lightslategray;
+ 
+
 }

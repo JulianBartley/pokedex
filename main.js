@@ -22,6 +22,8 @@ function enterTrainer(){
   }
 }
 
+// Pokemon Party JS
+
 let playerParty = document.getElementById('player-party')
 let generateBtn = document.getElementById('generate-btn')
 
@@ -41,3 +43,18 @@ class Trainer{
     this.pokemonList = []
   }
 }
+
+function queryPokemonAPI() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      let text = this.responseText
+let data = JSON.parse(text)
+console.log(data)
+    }
+  };
+  xhttp.open("GET", "https://fizal.me/pokeapi/api/v2/id/257.json", true);
+  xhttp.send();
+}
+
+
