@@ -1,5 +1,5 @@
-var page = document.getElementById('project');
-var icon = document.getElementById('pokemonClick')
+// var page = document.getElementById('project');
+// var icon = document.getElementById('pokemonClick')
 
 function professorOakPage(){
   if (project.style.display === 'none'){
@@ -22,39 +22,100 @@ function enterTrainer(){
   }
 }
 
-// Pokemon Party JS
-
-let playerParty = document.getElementById('player-party')
-let generateBtn = document.getElementById('generate-btn')
-
-class Pokemon{
-  constructor(name){
-    this.name= name
-    this.hp = 0
-    this.attack = 0
-    this.defense = 0
-    this.abilities = []
-  }
-}
-
-class Trainer{
-  constructor(name){
-    this.name = name
-    this.pokemonList = []
-  }
-}
-
-function queryPokemonAPI() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      let text = this.responseText
-let data = JSON.parse(text)
-console.log(data)
-    }
-  };
-  xhttp.open("GET", "https://fizal.me/pokeapi/api/v2/id/257.json", true);
-  xhttp.send();
-}
-
-
+//
+// let playerParty = document.getElementById('player-party')
+// let generateBtn = document.getElementById('generate-btn')
+//
+// generateBtn.addEventListener('click', () => {
+//   let list = []
+//   while (list.length < 3){
+//     let person = prompt('Choose your Pokemon!')
+//     list.push(person)
+//   }
+//   generateUnits(party, list)
+// })
+//
+// const generateUnits = (party, list) => {
+//   for(name of list){
+//     let unit = new Unit(name)
+//     party.add(unit)
+//   }
+//   return true
+// }
+//
+// class Party{
+//   constructor(name){
+//     this.units = []
+//   }
+//
+//   add(unit){
+//     this.units.push(unit)
+//     console.log(`${unit.name} has joined ${this.name}`)
+//     this.drawUnitOnScreen(unit)
+//   }
+//
+//   drawUnitOnScreen(unit){
+//     let li = document.createElement('li')
+//     li.innerText = `${unit.name} -- HP: ${unit.hp}`
+//     playerParty.appendChild(li)
+//   }
+// }
+//
+// class Unit{
+//   constructor(name){
+//   this.name = name
+//   this.hp = 100
+//   this.atk = 0
+//   this.defense = 0
+//   this.abilities = []
+//  }
+// }
+//
+//
+// let names = ['[]', '[]', '[]', '[]']
+// let party = new Party('Team Mamba')
+//
+//
+//
+//
+// function queryPokemonAPI() {
+//   var xhttp = new XMLHttpRequest();
+//   xhttp.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//       let text = this.responseText
+// let data = JSON.parse(text)
+// console.log(data)
+//     }
+//   };
+//   xhttp.open("GET", "https://fizal.me/pokeapi/api/v2/id/257.json", true);
+//   xhttp.send();
+// }
+//
+// function createNode(element) {
+//       return document.createElement(element);
+//   }
+//
+//   function append(parent, el) {
+//     return parent.appendChild(el);
+//   }
+//
+//   const ul = document.getElementById('authors');
+//   const url = 'https://randomuser.me/api/?results=10';
+//   fetch(url)
+//   .then((resp) => resp.json())
+//   .then(function(data) {
+//     let authors = data.results;
+//     return authors.map(function(author) {
+//       let li = createNode('li'),
+//           img = createNode('img'),
+//           span = createNode('span');
+//       img.src = author.picture.medium;
+//       span.innerHTML = `${author.name.first} ${author.name.last}`;
+//       append(li, img);
+//       append(li, span);
+//       append(ul, li);
+//     })
+//   })
+//   .catch(function(error) {
+//     console.log(error);
+//   });
