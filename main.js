@@ -34,7 +34,11 @@ function enterTrainer(){
 //   }
 //   generateUnits(party, list)
 // })
+<<<<<<< HEAD
 
+=======
+//
+>>>>>>> 1539cddb40c17188b1a9d8d8ba56632dab22ba76
 // const generateUnits = (party, list) => {
 //   for(name of list){
 //     let unit = new Unit(name)
@@ -42,7 +46,11 @@ function enterTrainer(){
 //   }
 //   return true
 // }
+<<<<<<< HEAD
 
+=======
+//
+>>>>>>> 1539cddb40c17188b1a9d8d8ba56632dab22ba76
 // class Party{
 //   constructor(name){
 //     this.units = []
@@ -53,7 +61,11 @@ function enterTrainer(){
 //     console.log(`${unit.name} has joined ${this.name}`)
 //     this.drawUnitOnScreen(unit)
 //   }
+<<<<<<< HEAD
 
+=======
+//
+>>>>>>> 1539cddb40c17188b1a9d8d8ba56632dab22ba76
 //   drawUnitOnScreen(unit){
 //     let li = document.createElement('li')
 //     li.innerText = `${unit.name} -- HP: ${unit.hp}`
@@ -71,12 +83,21 @@ function enterTrainer(){
 //  }
 // }
 //
+<<<<<<< HEAD
 
 // let names = ['[]', '[]', '[]', '[]']
 // let party = new Party('Team Mamba')
 //
 
 
+=======
+//
+// let names = ['[]', '[]', '[]', '[]']
+// let party = new Party('Team Mamba')
+//
+//
+//
+>>>>>>> 1539cddb40c17188b1a9d8d8ba56632dab22ba76
 //
 // function queryPokemonAPI() {
 //   var xhttp = new XMLHttpRequest();
@@ -90,6 +111,7 @@ function enterTrainer(){
 //   xhttp.open("GET", "https://fizal.me/pokeapi/api/v2/id/257.json", true);
 //   xhttp.send();
 // }
+<<<<<<< HEAD
 
 queryPokemonAPI = async() => {
   let x = prompt('Choose your pokemon! ')
@@ -108,6 +130,9 @@ queryPokemonAPI = async() => {
 
 
 
+=======
+//
+>>>>>>> 1539cddb40c17188b1a9d8d8ba56632dab22ba76
 // function createNode(element) {
 //       return document.createElement(element);
 //   }
