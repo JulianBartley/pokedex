@@ -23,7 +23,7 @@ function enterTrainer(){
 }
 
 //
-// let playerParty = document.getElementById('player-party')
+// let playerParty = document.getElem entById('player-party')
 // let generateBtn = document.getElementById('generate-btn')
 //
 // generateBtn.addEventListener('click', () => {
@@ -90,49 +90,34 @@ function enterTrainer(){
 //   xhttp.open("GET", "https://fizal.me/pokeapi/api/v2/id/257.json", true);
 //   xhttp.send();
 // }
+let senpaiArray = []
 
 queryPokemonAPI = async() => {
   let x = prompt('Choose your pokemon! ')
-  let website =await fetch(`https://fizal.me/pokeapi/api/v2/id/${x}.json`);
-  let run = await req.JSON(website)
-  let pokemon = await {
-    name: data.name
+  let req =await fetch(`https://fizal.me/pokeapi/api/v2/id/${x}.json`);
+  let data = await req.json()
+  let pokemon =  {
+    name: data.name,
+    link: data.sprites.font_default,
+    stats:{
+      hp: data.stats[5].base_stats,
+      atk: data.stats[4].base_stats,
+      def: data.stats[3].base_stats
+    },
+    abl: [data.abilities[0].ability.name]
   }
+  console.log(data);
+  senpaiArray.push(pokemon)
+  createPkmn(pokemon)
 }
 
-
-
-//const url = ""
-
-
-
-
-
-// function createNode(element) {
-//       return document.createElement(element);
-//   }
-//
-//   function append(parent, el) {
-//     return parent.appendChild(el);
-//   }
-//
-//   const ul = document.getElementById('authors');
-//   const url = 'https://randomuser.me/api/?results=10';
-//   fetch(url)
-//   .then((resp) => resp.json())
-//   .then(function(data) {
-//     let authors = data.results;
-//     return authors.map(function(author) {
-//       let li = createNode('li'),
-//           img = createNode('img'),
-//           span = createNode('span');
-//       img.src = author.picture.medium;
-//       span.innerHTML = `${author.name.first} ${author.name.last}`;
-//       append(li, img);
-//       append(li, span);
-//       append(ul, li);
-//     })
-//   })
-//   .catch(function(error) {
-//     console.log(error);
-//   });
+createPkmn = (pokemon) => {
+  let generate = document.createElement('footer')
+  document.body.appendChild(generate)
+  generate.classname = "generator"
+  generate.innerText= `<p> ${pokemon.name}</p>
+                        <p>  Pokemon HP: ${pokemon.stats.hp}
+                          Pokemon Def: ${pokemon.stats.def}
+                          Pokemon atk: ${pokemon.stats.atk}
+                          Pokemon Abilities: ${pokemon.abl[0]} </p>`
+}

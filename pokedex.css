@@ -1,22 +1,8 @@
-
-
-/*
-#grid{
-  display: grid;
-  border-color: black;
-  border-width: 5px;
-  grid-template: 20vh 20vh/ repeat(3,20vw);
-  grid-template-areas:
-  "header . header"
-  ". . ."
-  "footer footer footer";
-}
- */
-
 body{
   margin: 0;
   background: rgb(16,93,107);
 }
+/* PokeBall framework */
 
 .heading{
   position: absolute;
@@ -38,15 +24,9 @@ body{
   background-color: white;
   position: absolute;
   bottom: 0vh;
-  box-shadow: 5px 0px -3px 9px black;
+  box-shadow: 5px -3px 9px black;
 }
 
-#Pokedex{
-  font-family: 'Press Start 2P', cursive;
-  padding-top: 61px;
-  font-size: 30px;
-  padding-left: 23.5px;
-}
 
 #circle{
     position: absolute;
@@ -73,22 +53,14 @@ body{
   box-shadow: inset 0px -13px 19px  black;
 }
 
-/* button{
-  background-color: rgb(56,233,205); /* Green */
-  /* border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
+#Pokedex{
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 61px;
+  font-size: 30px;
+  padding-left: 23.5px;
+}
 
-  /* .grid-columns{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    border-width: 5px;
-    grid-gap: 10px;
-  } */
+/* Grid inside of the PokeBall. */
 
 .grid-columns{
   display: grid;
@@ -96,23 +68,22 @@ body{
   column-gap: 10px;
   position: absolute;
   top: 129px;
-  border-style: solid;
-  border-color: rgb(96,210,43);
+  /* border-style: solid; */
+  /* border-color: rgb(96,210,43); */
   height: 53vh;
   width: 100%;
-  border-width: 2px;
 }
 
-.rightside{
+#rightside{
   display: grid;
   grid-template-rows: auto;
   height: 52.5vh;
   width: 98%;
   border-top: 2px solid #dfdfdf;
-  border-bottom: 4px solid #dfdfdf;
-  border-style: solid;
-  border-color: rgb(120, 245, 62);
-  grid-gap: 0px;
+  /* border-bottom: 4px solid #dfdfdf; */
+  /* border-style: solid; */
+  /* border-color: rgb(120, 245, 62); */
+  /* grid-gap: 0px; */
   /* border-top: 1px solid #dfdfdf;
    border-left: 1px solid #dfdfdf; */
    /* &:nth-child(-n+2) {
@@ -121,6 +92,8 @@ body{
    &:nth-child(odd) {
      border-left: none; */
 }
+
+/* Trainers information on the left side of the PokeBall. */
 
 #profileImage{
   padding: 18px;
