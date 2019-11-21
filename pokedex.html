@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
-    <link rel = "icon" href = "https://www.shareicon.net/data/256x256/2015/08/24/90230_pokeball_512x512.png"
-        type = "image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="pokedex.css">
-    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="heading">
-      <h1 id="Pokedex">PokéDex
-        <!-- <img id="ball" src="https://cdn76.picsart.com/209915339005202.gif?c256x256" alt="pokeball" height="50px" width="50px"> <img id="gameFreak" src="https://upload.wikimedia.org/wikipedia/sco/e/ea/Game_Freak_logo.png" height="65px" width="65px"></h1> -->
-        <div id="circle"></div>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="icon" href="https://www.shareicon.net/data/256x256/2015/08/24/90230_pokeball_512x512.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pokedex.css">
+  <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1 id="Pokedex">PokéDex
+      <!-- <img id="ball" src="https://cdn76.picsart.com/209915339005202.gif?c256x256" alt="pokeball" height="50px" width="50px"> <img id="gameFreak" src="https://upload.wikimedia.org/wikipedia/sco/e/ea/Game_Freak_logo.png" height="65px" width="65px"></h1> -->
+      <div id="circle"></div>
+  </div>
+  <!-- <button type="button" id="generate-btn"> Team Builder</button> -->
+
+  <div class="grid-columns">
+    <div id="left">
+      <div id=profileImage>
+        <img src="http://pluspng.com/img-png/mewtwo-png--1279.png" height='150px' width='150px' alt="">
+        <div id="map">
+          <img src="https://vignette.wikia.nocookie.net/pokemon-planet/images/7/78/Kanto.png/revision/latest?cb=20161018082440" height=240px width=240px alt="">
+        </div>
+        <button type="button" id="button" onclick="queryPokemonAPI()">Choose your team!</button>
+      </div>
+      <div id="trainerBox">
+        <P>NAME:<div id = 'Tname'></div></p>
+        <p>REGION: KANTO</p>
+        <p>BADGES: 8</p>
+
+
+      </div>
     </div>
-    <!-- <button type="button" id="generate-btn"> Team Builder</button> -->
+    <img id="image" alt="">
+    <div id="right">
+      <p id="div"></p>
+      <p id = 'div2'></p>
+      <p id = 'div3'></p>
+      <p id = 'div4'></p>
+      <p id = 'div5'></p>
+      <div id="rightside">
 
-      <div class="grid-columns">
-        <div id="left">
-          <div id= profileImage>
-            <img src="http://pluspng.com/img-png/mewtwo-png--1279.png" height= '150px' width='150px' alt="">
-            <div id="map">
-              <img src="https://vignette.wikia.nocookie.net/pokemon-planet/images/7/78/Kanto.png/revision/latest?cb=20161018082440" height=240px width=240px alt="">
-            </div>
-            <button type="button" id="button" onclick="queryPokemonAPI()">Choose your team!</button>
-          </div>
-            <div id="trainerBox">
-              <p>NAME: JULIAN BARTLEY</p>
-              <p>REGION: KANTO</p>
-              <p>BADGES: 8</p>
+        <!-- <div class="">1</div>
 
+        <div class="">2</div>
 
-            </div>
-        </div>
-
-
-
-        <div id="right">
-          <div id="rightside">
-            <div class="">1</div>
-
-            <div class="">2</div>
-
-            <div class="">3</div>
-          </div>
-
-        </div>
+        <div class="">3</div> -->
       </div>
 
-
-      <div class= "bottom">
-        <!-- <ul id="player-party"> -->  <!-- </ul> -->
-        <div id="halfCircle"></div>
     </div>
+  </div>
+
+
+  <div class="bottom">
+    <!-- <ul id="player-party"> -->
+    <!-- </ul> -->
+    <div id="halfCircle"></div>
+  </div>
 
 
 
 
 
-      <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 
-    </body>
-    </html>
+</body>
+
+</html>

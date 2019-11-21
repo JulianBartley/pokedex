@@ -43,6 +43,7 @@ body{
     z-index: 1;
 }
 
+
 #halfCircle{
   position: absolute;
   margin-left: 46.3%;
@@ -73,7 +74,9 @@ body{
   height: 53vh;
   width: 100%;
 }
-
+#right{
+  z-index: 99;
+}
 #rightside{
   display: grid;
   grid-template-rows: auto;

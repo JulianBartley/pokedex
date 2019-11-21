@@ -9,6 +9,7 @@ body{
   position: absolute;
   top: 130px;
   left: 430px;
+  cursor: pointer;
   transition: transform .4s;
 }
 
@@ -27,7 +28,7 @@ body{
 
 #project{
   display:none;
-  cursor: url(http://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto;
+  /* cursor: url(http://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto; */
   position: absolute;
  width: 100vw;
  height: 100vh;
@@ -63,7 +64,7 @@ body{
   padding: 7% 15%;
   font-family: 'Press Start 2P', cursive;
   font-size: 28px;
-  cursor: url(http://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto;
+  /* cursor: url(http://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto; */
 }
 
 
@@ -120,7 +121,8 @@ input[type=text]{
   background-color: white;
   border: none;
   font-family: 'Press Start 2P', cursive;
-  cursor: url(http://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto;
+  /* cursor: url(http://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto; */
+  cursor: pointer;
   text-align: center;
   font-size: 20px;
   display: block;
