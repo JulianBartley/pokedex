@@ -70,15 +70,3 @@ queryPokemonAPI = async() => {
     }
 
   }
-  // console.log(data);
-  // console.log(pokemon)
-  // all.push(pokemon)
-
-// createPokemon = (pokemon) => {
-//   let x = document.getElementById('right')
-//   x.innerText = `${pokemon.name}
-//               Pokemon HP: ${pokemon.stats.hp}
-//               Pokemon Def: ${pokemon.stats.def}
-//               Pokemon atk: ${pokemon.stats.atk}`
-// }
-queryPokemonAPI()

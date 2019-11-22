@@ -10,12 +10,34 @@ body{
   top: 130px;
   left: 430px;
   cursor: pointer;
-  transition: transform .4s;
+  padding:inherit;
 }
 
 #pokemonClick:hover{
-  transform: scale(1.5);
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 
 #logo{
 /* Pokemon logo in bottom corner. */
@@ -41,12 +63,41 @@ body{
   position: absolute;
   left: 45%;
   top: 60px;
+  animation-duration: 1.5s;
+  animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 
 #bulbasaur{
   position: absolute;
   left: 40%;
   top: 313px;
+  animation-duration: 1.3s;
+  animation-name: slideinRight;
+}
+
+@keyframes slideinRight {
+  from {
+    margin-left: 100%;
+    width: 300%;
+}
+
+to {
+  margin-left: 0%;
+  width: 100%;
+}
 }
 
 #dialogBox{
