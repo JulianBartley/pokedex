@@ -27,17 +27,18 @@ let all = []
 
 
 queryPokemonAPI = async() => {
-  let x = prompt('Choose your pokemon! ')
-  // let x = Math.floor(math.random * 100) + 2
+  let x = prompt('Choose your pokemon!')
   let req =await fetch(`https://fizal.me/pokeapi/api/v2/id/${x}.json`);
   let data = await req.json()
+
   let name = data.name
   let hp = data.stats[5].base_stat
   let attack = data.stats[4].base_stat
   let defense = data.stats[3].base_stat
+  let ability = data.abilities[0].ability.name
 
 
-  let pok = new Pokemon(name, hp, attack, defense, )
+  let pok = new Pokemon(name, hp, attack, defense, ability )
   pok.display()
 
               // Pokemon Def: pokemon.stats.def
@@ -46,27 +47,30 @@ queryPokemonAPI = async() => {
   }
 
   class Pokemon {
-    constructor(name,hp, attack, defense, ){
-      // this.image
+    constructor(name,hp, attack, defense, ability){
+
       this.name = name
       this.hp = hp
       this.attack = attack
       this.defense = defense
+      this.ability = ability
+
 
     }
     display(){
-      // let img = document.getElementById('image')
-      // img.src = this.image
+
       let z = document.getElementById('div')
       z.innerText = this.name
       let hp = document.getElementById('div2')
-      hp.innerText = this.hp
+      hp.innerText = `HP:  ${this.hp}`
       let attack = document.getElementById('div3')
-      attack.innerText = this.attack
+      attack.textContent = `ATTACK: ${this.attack}`
       let defense = document.getElementById('div4')
-      defense.innerText = this.defense
-      // let ability = document.getElementById('div5')
-      // ability.innerText = this.ability
+      defense.textContent = `DEFENSE:  ${this.defense}`
+      let ability = document.getElementById('div5')
+      ability.textContent = `ABILITY: ${this.ability}`
     }
 
   }
+
+     // `HP:    ${pokemon.hp}
