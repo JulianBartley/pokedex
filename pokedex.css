@@ -13,7 +13,22 @@ body{
   width: 100%;
   height: 20vh;
   background: rgb(178,17,0);
+  z-index: 100;
 }
+
+.heading{
+    background:rgb(178,17,0);
+
+    -webkit-animation: expand 7s;
+}
+
+@-webkit-keyframes expand{
+    0%{height:50vh}
+    100%{height:20vh}
+}
+
+
+
 
 .bottom{
   border-style: solid;
@@ -25,6 +40,19 @@ body{
   position: absolute;
   bottom: 0vh;
   box-shadow: 5px -3px 9px black;
+  z-index: 99;
+}
+
+
+.bottom{
+    background: white;
+
+    -webkit-animation: expand 7s;
+}
+
+@-webkit-keyframes expand{
+    0%{height:50vh}
+    100%{height:20vh}
 }
 
 
@@ -40,13 +68,28 @@ body{
     border-radius: 50%;
     margin-left: 44.3%;
     margin-top: -33px;
-    z-index: 1;
+    z-index: 100;
+
+-webkit-animation-name: circle;
+  -webkit-animation-duration: 4s;
+
+  animation-name: circle;
+  animation-duration: 7s;
+
 }
 
 
+
+
+@keyframes circle {
+  0%   { top:50vh;}
+
+  100% {  top:17vh;}
+}
+
 #halfCircle{
   position: absolute;
-  margin-left: 46.3%;
+  margin-left: 46.7%;
   height:50px;
   width:100px;
   border-radius: 0 0 90px 90px;
@@ -76,43 +119,22 @@ body{
 }
 .right{
   position: relative;
-  z-index: 99;
+  z-index: 98;
   font-family: 'Pathway Gothic One', sans-serif;
   color: rgb(120, 245, 62);
   font-size: 20px;
   text-transform: uppercase;
   padding: 30px;
-
-}
-
-
-/* #rightside{
-  display: grid;
-  grid-template-rows: auto;
-  height: 52.5vh;
-  width: 98%;
-  border-top: 2px solid #dfdfdf; */
-  /* border-bottom: 4px solid #dfdfdf; */
-  /* border-style: solid; */
-  /* border-color: rgb(120, 245, 62); */
-  /* grid-gap: 0px; */
-  /* border-top: 1px solid #dfdfdf;
-   border-left: 1px solid #dfdfdf; */
-   /* &:nth-child(-n+2) {
-     border-top: none;
-   }
-   &:nth-child(odd) {
-     border-left: none; */
 }
 
 /* Trainers information on the left side of the PokeBall. */
 
 #profileImage{
-  padding: 18px;
+  padding: 4%;
 }
 
 #trainerBox{
-  padding-left: 40px;
+  padding-left: 13%;
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 20px;
   color: rgb(120, 245, 62);

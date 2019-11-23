@@ -1,5 +1,4 @@
-// var page = document.getElementById('project');
-// var icon = document.getElementById('pokemonClick')
+
 
 function professorOakPage(){
   if (project.style.display === 'none'){
