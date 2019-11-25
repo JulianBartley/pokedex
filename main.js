@@ -1,5 +1,4 @@
-// var page = document.getElementById('project');
-// var icon = document.getElementById('pokemonClick')
+
 
 function professorOakPage(){
   if (project.style.display === 'none'){
@@ -27,17 +26,19 @@ let all = []
 
 
 queryPokemonAPI = async() => {
-  let x = prompt('Choose your pokemon! ')
-  // let x = Math.floor(math.random * 100) + 2
+  let x = prompt('Choose your pokemon!')
   let req =await fetch(`https://fizal.me/pokeapi/api/v2/id/${x}.json`);
   let data = await req.json()
+
   let name = data.name
   let hp = data.stats[5].base_stat
   let attack = data.stats[4].base_stat
   let defense = data.stats[3].base_stat
+  let ability = data.abilities[0].ability.name
+  let img = data.sprites.front_default
 
 
-  let pok = new Pokemon(name, hp, attack, defense, )
+  let pok = new Pokemon(name, hp, attack, defense, ability )
   pok.display()
 
               // Pokemon Def: pokemon.stats.def
@@ -45,40 +46,35 @@ queryPokemonAPI = async() => {
               console.log(data);
   }
 
+
+
   class Pokemon {
-    constructor(name,hp, attack, defense, ){
-      // this.image
+    constructor(name,hp, attack, defense, ability, img){
+
       this.name = name
       this.hp = hp
       this.attack = attack
       this.defense = defense
+      this.ability = ability
+      this.img = img
+
+
 
     }
     display(){
-      // let img = document.getElementById('image')
-      // img.src = this.image
+
       let z = document.getElementById('div')
       z.innerText = this.name
       let hp = document.getElementById('div2')
-      hp.innerText = this.hp
+      hp.innerText = `HP:  ${this.hp}`
       let attack = document.getElementById('div3')
-      attack.innerText = this.attack
+      attack.textContent = `ATTACK: ${this.attack}`
       let defense = document.getElementById('div4')
-      defense.innerText = this.defense
-      // let ability = document.getElementById('div5')
-      // ability.innerText = this.ability
+      defense.textContent = `DEFENSE:  ${this.defense}`
+      let ability = document.getElementById('div5')
+      ability.textContent = `ABILITY: ${this.ability}`
+      let img = document.getElementById('img')
+      img.textContent = `${this.img}`
     }
 
   }
-  // console.log(data);
-  // console.log(pokemon)
-  // all.push(pokemon)
-
-// createPokemon = (pokemon) => {
-//   let x = document.getElementById('right')
-//   x.innerText = `${pokemon.name}
-//               Pokemon HP: ${pokemon.stats.hp}
-//               Pokemon Def: ${pokemon.stats.def}
-//               Pokemon atk: ${pokemon.stats.atk}`
-// }
-queryPokemonAPI()
