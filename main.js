@@ -45,6 +45,8 @@ queryPokemonAPI = async() => {
               console.log(data);
   }
 
+
+
   class Pokemon {
     constructor(name,hp, attack, defense, ability){
 
@@ -71,5 +73,3 @@ queryPokemonAPI = async() => {
     }
 
   }
-
-     // `HP:    ${pokemon.hp}
