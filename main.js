@@ -35,39 +35,30 @@ queryPokemonAPI = async() => {
   let attack = data.stats[4].base_stat
   let defense = data.stats[3].base_stat
   let ability = data.abilities[0].ability.name
-<<<<<<< HEAD
   let img = data.sprites.front_default
-=======
->>>>>>> 4a2fdb976b20560884ffa232398279df19659eb8
 
+  trainer.listPokemon.push(name)
 
   let pok = new Pokemon(name, hp, attack, defense, ability )
   pok.display()
 
               // Pokemon Def: pokemon.stats.def
               // Pokemon atk: pokemon.stats.atk)
-              console.log(data);
+              
   }
 
 
 
   class Pokemon {
-<<<<<<< HEAD
-    constructor(name,hp, attack, defense, ability, img){
-=======
     constructor(name,hp, attack, defense, ability){
->>>>>>> 4a2fdb976b20560884ffa232398279df19659eb8
 
       this.name = name
       this.hp = hp
       this.attack = attack
       this.defense = defense
       this.ability = ability
-<<<<<<< HEAD
       this.img = img
 
-=======
->>>>>>> 4a2fdb976b20560884ffa232398279df19659eb8
 
 
     }
@@ -83,11 +74,19 @@ queryPokemonAPI = async() => {
       defense.textContent = `DEFENSE:  ${this.defense}`
       let ability = document.getElementById('div5')
       ability.textContent = `ABILITY: ${this.ability}`
-<<<<<<< HEAD
-      let img = document.getElementById('img')
-      img.textContent = `${this.img}`
-=======
->>>>>>> 4a2fdb976b20560884ffa232398279df19659eb8
     }
 
   }
+
+  class Trainer{
+    constructor(name){
+      this.name = name
+      this.listPokemon = []
+      this.all = this.all.bind(this)
+    }
+    all(){
+      return this.listPokemon
+    }
+  }
+
+  trainer = new Trainer('Julian')

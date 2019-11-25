@@ -98,6 +98,7 @@ body{
 }
 
 #Pokedex{
+  letter-spacing: 3px;
   font-family: 'Press Start 2P', cursive;
   padding-top: 61px;
   font-size: 30px;
@@ -109,11 +110,8 @@ body{
 .grid-columns{
   display: grid;
   grid-template-columns: 50% 50%;
-  /* column-gap: 10px; */
   position: absolute;
   top: 129px;
-  /* border-style: solid; */
-  /* border-color: rgb(96,210,43); */
   height: 53vh;
   width: 100%;
 }
@@ -133,7 +131,14 @@ body{
   padding: 4%;
 }
 
+#profileCircle{
+  border-radius: 50%;
+  background-color: white;
+  z-index: 1;
+}
+
 #trainerBox{
+  letter-spacing: 2px;
   padding-left: 13%;
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 20px;
@@ -147,6 +152,8 @@ body{
   font-family: 'Pathway Gothic One', sans-serif;
   background-color: rgb(120, 245, 62);
   font-size: 14px;
+  border: none;
+  cursor: pointer;
 }
 
 #map{
