@@ -39,12 +39,14 @@ queryPokemonAPI = async() => {
 
   trainer.listPokemon.push(name)
 
-  let pok = new Pokemon(name, hp, attack, defense, ability )
+  let pok = new Pokemon(name, hp, attack, defense, ability)
   pok.display()
+
+    console.log(data)
 
               // Pokemon Def: pokemon.stats.def
               // Pokemon atk: pokemon.stats.atk)
-              
+
   }
 
 
@@ -57,7 +59,7 @@ queryPokemonAPI = async() => {
       this.attack = attack
       this.defense = defense
       this.ability = ability
-      this.img = img
+
 
 
 
@@ -89,4 +91,4 @@ queryPokemonAPI = async() => {
     }
   }
 
-  trainer = new Trainer('Julian')
+trainer = new Trainer('Julian')

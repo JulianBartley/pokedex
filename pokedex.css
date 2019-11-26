@@ -115,20 +115,24 @@ body{
   height: 53vh;
   width: 100%;
 }
+
 .right{
   position: relative;
   z-index: 98;
   font-family: 'Pathway Gothic One', sans-serif;
   color: rgb(120, 245, 62);
   font-size: 20px;
+  letter-spacing: 2.39px;
   text-transform: uppercase;
-  padding: 30px;
+  padding: 40px;
+  padding-top: 51px;
 }
 
 /* Trainers information on the left side of the PokeBall. */
 
 #profileImage{
-  padding: 4%;
+  padding: 5%;
+  padding-top: 11%;
 }
 
 #profileCircle{
@@ -154,15 +158,20 @@ body{
   font-size: 14px;
   border: none;
   cursor: pointer;
+  padding: 1%;
 }
+
+#button:hover {
+  background-color: red;
+}
+
 
 #map{
   position: absolute;
-  left: 253px;
-  top: 74px;
+  left: 270px;
+  top: 116px;
   width: 200px;
   height: 200px;
-  overflow: visible;
   overflow-x: scroll;
   border-radius:25px;
 }
